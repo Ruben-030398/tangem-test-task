@@ -1,0 +1,62 @@
+@import ../../../sass/_variables
+@import ../../../sass/_mixins
+@import ../../../sass/_typography
+
+.card
+  padding: 3.5rem 0rem
+  transform: translateX(0%)
+  transition-duration: 200ms
+  transition-timing-function: ease
+  display: flex
+  width: 60rem
+  bottom: 3.4rem
+  right: 3.4rem
+  position: fixed
+  transform: translateX(130%)
+  &_visible
+    transform: translateX(0%)
+  &__icon_btn
+    display: flex
+    background-color: transparent
+    height: max-content
+    position: absolute
+    @include respond($breakpoint: 'mobile')
+      right: 2rem  
+    &:hover
+      background-color: transparent
+    &:active
+      transform: scale(0.8)
+  @include respond($breakpoint: 'tab-port')
+    width: 100%
+    overflow: hidden
+    right: 0rem
+  &__content
+    background-image: url('/images/black-friday.png')
+    flex: 1
+    background-size: cover
+    border-radius: 1.6rem
+    display: flex
+    justify-content: flex-end
+    position: relative
+
+    @include respond($breakpoint: 'tab-port')
+      border-radius: 0
+      background-position-x: -15rem
+      background-repeat: no-repeat
+      background-color: $color-black
+  &__texts
+    height: 100%
+    padding-top: 7.5rem
+    padding-bottom: 6.7rem
+    padding-right: 3.6rem
+    display: flex
+    flex-direction: column
+    align-items: center
+    flex-basis: 50%
+    justify-content: space-between
+    gap: 1.8rem
+    @include respond($breakpoint: 'tab-port')
+      flex-basis: 100%
+      padding: 7rem
+    @include respond($breakpoint: 'mobile')
+      padding: 5rem
