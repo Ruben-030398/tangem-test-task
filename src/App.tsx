@@ -8,8 +8,6 @@ function App() {
       <MobileHeader />
       <Header />
       <Card />
-      {/* <h1>Vite + React</h1>
-      <Button color={ButtonVariant.Light}>Shop now</Button> */}
     </div>
   )
 }
