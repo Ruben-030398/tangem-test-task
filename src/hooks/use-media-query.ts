@@ -38,7 +38,6 @@ export default function useMediaQuery(query: string | number, direction: 'min-wi
         matchMedia.removeEventListener('change', handleChange)
       }
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [mediaQuery])
 
   return matches

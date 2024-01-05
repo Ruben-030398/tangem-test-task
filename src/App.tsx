@@ -1,5 +1,4 @@
-import { Card, Header } from './modules'
-import MobileHeader from './modules/mobile-header/ui/mobile-header'
+import { Card, Header, MobileHeader } from './modules'
 
 function App() {
 

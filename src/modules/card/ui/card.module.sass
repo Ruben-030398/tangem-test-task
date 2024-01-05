@@ -3,10 +3,8 @@
 @import ../../../sass/_typography
 
 .card
-  padding: 3.5rem 0rem
-  transform: translateX(0%)
-  transition-duration: 200ms
-  transition-timing-function: ease
+  transition-duration: 300ms
+  transition-timing-function: ease-in-out
   display: flex
   width: 60rem
   bottom: 3.4rem
@@ -21,11 +19,13 @@
     height: max-content
     position: absolute
     @include respond($breakpoint: 'mobile')
-      right: 2rem  
+      right: 2rem
     &:hover
       background-color: transparent
     &:active
       transform: scale(0.8)
+  &__shop_btn
+    padding: 1.2rem 2.4rem
   @include respond($breakpoint: 'tab-port')
     width: 100%
     overflow: hidden
@@ -38,16 +38,16 @@
     display: flex
     justify-content: flex-end
     position: relative
-
     @include respond($breakpoint: 'tab-port')
       border-radius: 0
-      background-position-x: -15rem
+      background-position-x: -13.4rem
+      // background-position-y: -2rem
       background-repeat: no-repeat
       background-color: $color-black
   &__texts
     height: 100%
     padding-top: 7.5rem
-    padding-bottom: 6.7rem
+    padding-bottom: 5.5rem
     padding-right: 3.6rem
     display: flex
     flex-direction: column
